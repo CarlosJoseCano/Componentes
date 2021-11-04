@@ -15,6 +15,19 @@ const routes: Routes = [
     path: 'action-sheet',
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
+
+  {
+    path: 'alert',
+    loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
+  },
+  //Esto es en caso de que no se encontrara la ruta. Tiene que estar siempre la ultima
+  {
+    path: '**',
+    loadChildren: () => import('./pages/error-page/error-page.module').then( m => m.ErrorPagePageModule),
+    pathMatch:'full'
+  }
+
+
 ];
 
 @NgModule({
