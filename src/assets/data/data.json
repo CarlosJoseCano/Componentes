@@ -8,5 +8,10 @@
     "icon": "logo-apple-appstore",
     "redirecTo": "/alert",
     "name": "Alert"
+  },
+  {
+    "icon": "beaker",
+    "redirecTo": "/avatar",
+    "name": "Avatar"
   }
 ]

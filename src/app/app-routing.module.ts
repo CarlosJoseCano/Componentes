@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
   //Esto es en caso de que no se encontrara la ruta. Tiene que estar siempre la ultima
   {
     path: '**',
