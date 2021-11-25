@@ -24,13 +24,26 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
+
+  {
+    path: 'botones',
+    loadChildren: () => import('./pages/botones/botones.module').then( m => m.BotonesPageModule)
+  },
+
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'check',
+    loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)
+  },
   //Esto es en caso de que no se encontrara la ruta. Tiene que estar siempre la ultima
   {
     path: '**',
     loadChildren: () => import('./pages/error-page/error-page.module').then( m => m.ErrorPagePageModule),
     pathMatch:'full'
   }
-
 
 ];
 
