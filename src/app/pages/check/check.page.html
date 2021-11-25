@@ -1,0 +1,24 @@
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Etiqueta</ion-label>
+      <ion-checkbox mode="md" color="danger"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Etiqueta</ion-label>
+      <ion-checkbox mode="ios" color="success"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <h2>Calcular valor</h2>
+  <ion-list>
+    <ion-item *ngFor="let check of data" (click)="onClick(check)">
+      <ion-label>{{check.name}}</ion-label>
+      <ion-checkbox color="{{check.name}}"  [(ngModel)]="check.selected">
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
