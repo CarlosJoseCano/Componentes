@@ -1,0 +1,7 @@
+<<app-header [titulo]="nombre || 'Alert' "></app-header>
+
+<ion-content>
+  <h1 *ngIf="nombre" class="ion-text-capitalize ion-text-center">{{nombre}</h1>
+  <ion-button color="success" expand="full" (click)="presentAlert()">Mostrar Alert</ion-button>
+  <ion-button color="danger" expand="full" (click)="presentAlertConNombre()">Mostrar Alert Con Input</ion-button>
+</ion-content>

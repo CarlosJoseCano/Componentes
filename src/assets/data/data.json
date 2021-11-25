@@ -28,5 +28,20 @@
     "icon": "checkmark-circle-outline",
     "redirecTo": "/check",
     "name": "Checkbox"
+  },
+  {
+    "icon": "grid",
+    "redirecTo": "/grid",
+    "name": "Grid -Rows - Cols"
+  },
+  {
+    "icon": "car",
+    "redirecTo": "/fab",
+    "name": "Fab"
+  },
+  {
+    "icon": "hammer",
+    "redirecTo": "/input",
+    "name": "Inputs y Forms"
   }
 ]

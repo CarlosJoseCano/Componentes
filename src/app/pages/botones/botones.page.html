@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Botones</ion-title>
+
+    <ion-buttons slot="end">
+
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+
+      <ion-button color="warning" (click)="doClick($event)">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center ion-padding">
+
+<!--  BOTONES NORMALES-->
+
+  <ion-button size="small">SMALL</ion-button>
+
+  <ion-button expand="block" size="medium">MEDIUM</ion-button>
+  <ion-button expand="full" size="large">LARGE</ion-button>
+
+  <!--  BOTONES CON ENLACE-->
+
+  <ion-button class="ion-margin-top mi-boton" routerLink="/alert" color="danger">Alert</ion-button>
+
+  <ion-row class="ion-margin-top">
+    <ion-col>
+      <ion-button expand="full" routerLink="/avatar" color="tertiary">
+        Avatar
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" routerLink="/action-sheet" color="secondary">
+        Action Sheet
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-button fill="clear" class="ion-margin-top" color="secondary">Clear</ion-button>
+  <ion-button fill="outline" class="ion-margin-top" color="secondary">Outline</ion-button>
+  <ion-button fill="solid" class="ion-margin-top" color="secondary">Solid</ion-button>
+
+</ion-content>

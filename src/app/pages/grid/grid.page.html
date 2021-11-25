@@ -1,0 +1,46 @@
+<app-header titulo="Grid - Rows - Cols"></app-header>
+
+<ion-content class="ion-padding ion-text-center">
+
+  <div class="container" [ngSwitch]="display">
+    <ion-button (click)="cambiarView('ejemplo1')">Ejemplo 1</ion-button>
+    <ion-button (click)="cambiarView('ejemplo2')">Ejemplo 2</ion-button>
+    <ion-button (click)="cambiarView('ejemplo3')">Ejemplo 3</ion-button>
+
+    <ion-grid fixed *ngSwitchCase="'ejemplo1'">
+      <ion-row class="ion-text-center">
+        <ion-col>Hola</ion-col>
+        <ion-col>Caracola</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid fixed *ngSwitchCase="'ejemplo2'">
+      <ion-row class="ion-text-center">
+        <ion-col *ngFor="let col of[1,2,3,4,5,6,7,8,9,0,1,2];
+               let i = index">
+          Hola item {{i+1}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid fixed *ngSwitchCase="'ejemplo3'">
+      <ion-row class="ion-text-center">
+        <ion-col *ngFor="let d of datos"
+                 size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+          <ion-card>
+            <img src="/assets/shapes.svg" alt="Imagen">
+            <ion-card-header>
+              <ion-title>{{d.id}} - {{d.title}}</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{d.body}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+
+</ion-content>
