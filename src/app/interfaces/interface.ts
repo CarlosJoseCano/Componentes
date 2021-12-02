@@ -10,3 +10,10 @@ export interface ApiFalseData{
   title: string;
   body: string;
 }
+
+export interface Usuario{
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+}

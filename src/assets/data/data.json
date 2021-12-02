@@ -43,5 +43,10 @@
     "icon": "hammer",
     "redirecTo": "/input",
     "name": "Inputs y Forms"
+  },
+  {
+    "icon": "list",
+    "redirecTo": "/list",
+    "name": "Listas y Sliders"
   }
 ]

@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
   //Esto es en caso de que no se encontrara la ruta. Tiene que estar siempre la ultima
   {
     path: '**',
