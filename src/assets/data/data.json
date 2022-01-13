@@ -48,5 +48,25 @@
     "icon": "list",
     "redirecTo": "/list",
     "name": "Listas y Sliders"
+  },
+  {
+    "icon": "reorder-four-outline",
+    "redirecTo": "/list-reorder",
+    "name": "Listas y Reorder"
+  },
+  {
+    "icon": "cog",
+    "redirecTo": "/tabs",
+    "name": "Tabs"
+  },
+  {
+    "icon": "infinite",
+    "redirecTo": "/infinite-scroll",
+    "name": "Infinite Scroll"
+  },
+  {
+    "icon": "code-working",
+    "redirecTo": "/progressbar",
+    "name": "Progressbar"
   }
 ]
