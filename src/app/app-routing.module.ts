@@ -70,18 +70,17 @@ const routes: Routes = [
     path: 'progressbar',
     loadChildren: () => import('./pages/progressbar/progressbar.module').then( m => m.ProgressbarPageModule)
   },
+  {
+    path: 'modal/:parametro',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
   //Esto es en caso de que no se encontrara la ruta. Tiene que estar siempre la ultima
   {
     path: '**',
     loadChildren: () => import('./pages/error-page/error-page.module').then( m => m.ErrorPagePageModule),
     pathMatch:'full'
   }
-
-
-
-
-
-];
+  ];
 
 @NgModule({
   imports: [

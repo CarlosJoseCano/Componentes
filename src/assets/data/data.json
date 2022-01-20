@@ -68,5 +68,10 @@
     "icon": "code-working",
     "redirecTo": "/progressbar",
     "name": "Progressbar"
+  },
+  {
+    "icon": "phone-portrait",
+    "redirecTo": "/modal/nombreSeccion",
+    "name": "Modal"
   }
 ]
